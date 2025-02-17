@@ -3,7 +3,7 @@
     min-width: 480px;
     margin: 0 auto ;
     padding: 2rem;
-    font-family: sans-serif;
+    font-family: sans-serif; 
     align-items: center;
 }
 
@@ -33,7 +33,7 @@
     font-size: 20px;
     line-height: 1.5;
     color: #555;
-    padding-top: 40px;
+    padding-top:20px;
     margin-bottom: 20px;
     text-align: left;
 }
@@ -53,9 +53,9 @@
 }
 
 .bbutton:hover {
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
-    background-color:gray;
-    color: black;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.8);
+    background-color:#696969;
+    color:white;
 }
 
 .hero-images1,
@@ -188,6 +188,7 @@
         font-size: 16px;
         text-align: center;
     }
+    
 
     .hero-images1 img, .hero-images2 img {
         height: 300px;
@@ -206,7 +207,7 @@
     }
     .product--image {
         width: 120px;  
-        height: 200px; 
+        height: 215px; 
         margin: 5px auto; 
         border-radius: 10px; 
         display: block;
@@ -219,4 +220,3 @@
         padding-right: 0px;
     }
 }
-  
