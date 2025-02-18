@@ -5,12 +5,12 @@ import 'react-multi-carousel/lib/styles.css';
 
 function Bottom() {
     const responsive = {
-    const responsive = {
         superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 5 },
         desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3 },
         tablet: { breakpoint: { max: 1024, min: 700 }, items: 2 },
         mobile: { breakpoint: { max: 700, min: 0 }, items: 1 }
-    };
+    }
+
 
     return (                  
         <div className="gallery-container">
