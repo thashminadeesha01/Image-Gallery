@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     min-width: 480px;
+    margin:auto;
 }
 
 .topic {
@@ -129,7 +130,7 @@
   }
 @media (max-width: 700px) {
     .container {
-        margin-left:15px;
+        margin-left:18px;
     }
 
     .imageStyle {
