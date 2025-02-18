@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     padding: 40px;
     background-color: white;
 }
@@ -166,7 +166,7 @@
     }
 
     .gallery-item {
-        width: 150px;
+        width: 170px;
         height: 225px;
     }
 
@@ -203,7 +203,8 @@
 
 @media (max-width: 700px) {
     .gallery-container{
-        margin-right:35px;
+        margin:auto;
+        margin-top:-40px ;
     }
     .hero-section {
         padding: 0px;
