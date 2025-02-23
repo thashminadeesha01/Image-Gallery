@@ -37,14 +37,19 @@ function Bottom() {
 
             {/* Carousel Section */}
             <div className="carousel-container">
-                <Carousel 
+            <Carousel 
                     responsive={responsive}
                     infinite={true}  
                     transitionDuration={800}  
                     customTransition="transform 0.01s ease-in-out"  
                     swipeable={true}
                     draggable={true}
-                >
+                    arrows={false} 
+                    autoPlay={true} 
+                    autoPlaySpeed={2000} 
+            >
+   
+
                     <div className='gallery-items'>
                         <img className='product--image' src='/images/K.jpg' alt='K'/>
                     </div>
