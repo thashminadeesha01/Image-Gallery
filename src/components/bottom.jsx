@@ -42,8 +42,6 @@ function Bottom() {
                     infinite={true}  
                     transitionDuration={800}  
                     customTransition="transform 0.01s ease-in-out"  
-                    swipeable={true}
-                    draggable={true}
                     arrows={false} 
                     autoPlay={true} 
                     autoPlaySpeed={2000} 
