@@ -18,17 +18,10 @@ function TopicBox(props) {
                 <img src="/images/B.jpg" alt="02" />
                 <img src="/images/C.jpg"  alt="03" />
                 <img src="/images/D.jpg"  alt="04" />
-
-           </div>
-            
-
-            <div className='imageStyle'>
                 <img src="/images/E.jpg" alt="05" />
                 <img src="/images/F.jpg" alt="06" />
                 <img src="/images/G.jpg"  alt="07" />
-                <img src="/images/H.jpg"  alt="08" />
-
-                
+                <img src="/images/H.jpg"  alt="08" />               
             </div>
        </div>
         
