@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
 .gallery-container {
     max-width: 1300px;
-    min-width: 480px;
+    min-width: 510px;
     margin: 0 auto ;
     padding: 2rem;
-    font-family: sans-serif; 
     align-items: center;
 }
 
@@ -27,6 +31,7 @@
     font-size: 2.5rem;
     line-height: 1.2;
     margin-bottom: 15px;
+    font-weight: normal;
 }
 
 .hero-content p {
@@ -36,6 +41,10 @@
     padding-top:20px;
     margin-bottom: 20px;
     text-align: left;
+}
+
+.maxs{
+    display:hidden;
 }
 
 .bbutton {
@@ -130,8 +139,13 @@
     margin-top: 20px;
 }
 
+.max {
+    display:none;
+
+}
+
 /* Responsive adjustments */
-@media (max-width: 1200px) {
+@media (max-width: 1270px) {
 
     .gallery-container{
         margin-top: -70px;
@@ -142,14 +156,20 @@
         text-align: center;
         flex: 1; 
     }
-
+    
     .hero-content p{
         text-align: center;
         font-size: 18px;
     }
-
+    
     .hero-images1, .hero-images2 {
         padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
     }
     .hero-images2{
         margin-top: -100px;
@@ -188,7 +208,7 @@
     }
 
 }
-@media (max-width: 815px) {
+@media (max-width: 830px) {
     .hero-images2{
         margin-top: -50px;
         margin-bottom: -75px;
@@ -209,7 +229,7 @@
     .hero-section {
         padding: 0px;
         flex-direction: column;
-        margin-top: 40px;
+        margin-top: 15px;
     }
 
     .hero-content {
@@ -218,11 +238,15 @@
 
     .hero-content h1 {
         font-size: 2rem;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .hero-content p {
         font-size: 16px;
         text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     
 
@@ -234,7 +258,7 @@
 
     .hero-images1 img, .hero-images2 img {
         height: 300px;
-        width: 500px;
+        width: 450px;
         margin: 0px;
     }
 
@@ -249,38 +273,23 @@
    
     .gallery-item {
         width: 500px;
-        height: 100px;
+        height: 300px;
     }
 
     .gallery-numbers {
         visibility: hidden;
     }
     .product--image {
-        width: 120px;  
-        height: 250px; 
+        max-width: 450px;  
         height: 300px; 
         margin: 5px auto; 
         border-radius: 10px; 
         display: block;
     }
+
+    .maxs{
+        display:hidden;
+    }
    
 }
 
-@media (max-width: 500px) {
-    .gallery-items{
-        padding-right: 0px;
-    }
-
-    .hero-section{
-        margin-top: 40px;
-    }
-    .hero-images2{
-        margin-top: -20px;
-        margin-bottom: -20px;
-    }
-
-    .hero-images1{
-        margin-top: -40px;
-        margin-bottom: 0px;
-    }
-}
