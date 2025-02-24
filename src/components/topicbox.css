@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    min-width: 480px;
-    margin:auto;
+    min-width: 510px;
+    margin: auto;
 }
 
 .topic {
     max-width: 722px;
-    width: 90%; 
-    height: auto; 
-    margin: 44px auto; 
+    width: 90%;
+    height: auto;
+    margin: 15px auto;
     text-align: center;
 }
 
@@ -18,7 +22,7 @@
     max-width: 100%;
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 64px;
     line-height: 70px;
     text-align: center;
@@ -30,10 +34,9 @@
     text-align: center;
     font-size: 26px;
     color: rgba(37, 37, 37, 0.8);
-
     line-height: 39px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto 20px; 
+    margin: 0 auto 20px;
 }
 
 .topic button {
@@ -48,73 +51,34 @@
     margin: 5px auto;
     transition: 0.3s ease-in-out;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-    display: block; 
+    display: block;
 }
 
 .topic button:hover {
-    background-color:#696969;
+    background-color: #696969;
     color: white;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
     border: hidden;
 }
 
-/* Responsive for Tablets */
-@media (max-width: 768px) {
-    .topic h1 {
-        font-size: 48px;
-        line-height: 60px;
-    }
-
-    .topic p {
-        font-size: 22px;
-        line-height: 34px;
-    }
-
-    .topic button {
-        width: 140px;
-        height: 50px;
-        font-size: 18px;
-    }
-}
-
-/* Responsive for Mobile */
-@media (max-width: 480px) {
-    .topic {
-        margin: 40px auto;
-    }
-
-    .topic h1 {
-        font-size: 36px;
-        line-height: 48px;
-    }
-
-    .topic p {
-        font-size: 18px;
-        line-height: 28px;
-    }
-
-    .topic button {
-        width: 120px;
-        height: 45px;
-        font-size: 16px;
-    }
-}
-
-
+/* Image Grid - 4 images in one row for desktop */
 .imageStyle {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: center; /* Spaces out images */
+    flex-wrap: wrap; /* Allows wrapping if needed */
     gap: 16px;
     padding: 20px;
-    max-width: 1400px;
+    max-width: 1300px;
+    justify-self: center;
 }
 
 .imageStyle img {
-    width: 316px;
-    height: 288px;
+    width: calc(25% - 12px); /* 4 images per row */
+    height: 250px; /* Adjust height */
     border-radius: 15px;
     transition: 0.3s ease-in-out;
+    object-fit: cover; /* Ensures images scale properly */
+    justify-content: center;
 }
 
 .imageStyle img:hover {
@@ -122,31 +86,53 @@
 }
 
 
-/* Responsive Design */
 @media (max-width: 1024px) {
-    p {
-        font-size: 30px;
-    }
-  }
-@media (max-width: 700px) {
-    .container {
-        margin-left:18px;
-    }
-
     .imageStyle {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 0;
+        justify-content: center;
     }
 
     .imageStyle img {
-        width: 500px;
-        height: 300px;
+        width: calc(33.33% - 12px); 
+        height: 250px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .imageStyle {
+        justify-content: center;
+    }
+
+    .imageStyle img {
+        width: calc(33.33% - 12px); 
+        height: 200px;
     }
 
     .topic {
-        font-size: 40px;
+        height: auto;
+        margin: 35px auto;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .container {
+        margin-left: 18px;
+    }
+
+    .imageStyle {
+        justify-content: center;
+    }
+
+    .imageStyle img {
+        width: calc(50% - 12px); 
+        height: 200px;
+    }
+
+    .topic {
+        font-size: 44px;
+        font-style: bold;
     }
 
     p {
@@ -159,3 +145,28 @@
         padding: 10px 25px;
     }
 }
+
+
+@media (max-width: 662px) {
+    .topic {
+        margin-top: 50px;
+    }
+    .topic h1 {
+        font-size: 35px; 
+        line-height: 36px; 
+        font-style: bold;
+    }
+
+    .topic p {
+        font-size: 20px; 
+        line-height: 30px;
+        margin-top: -10px;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 8px 20px;
+    }
+}
+
+
