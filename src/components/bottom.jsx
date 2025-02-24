@@ -27,6 +27,16 @@ function Bottom() {
                 <div className="hero-images2">
                     <img src="/images/J.jpg" alt="Nature 2" className="side-image"/>
                 </div>
+                <section className="maxs">
+                <div className='max'>
+                    <div className="hero-images3">
+                        <img src="/images/I.jpg" alt="Nature 1" className="main-image"/>
+                    </div>
+                    <div className="hero-images4">
+                        <img src="/images/J.jpg" alt="Nature 2" className="side-image"/>
+                    </div>
+                </div>
+                </section>
             </section>
             
             <div className="gallery-numbers">
