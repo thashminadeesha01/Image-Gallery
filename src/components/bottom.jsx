@@ -1,5 +1,5 @@
 import React from 'react';
-import './bottom.css';
+import './text.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -27,15 +27,21 @@ function Bottom() {
                 <div className="hero-images2">
                     <img src="/images/J.jpg" alt="Nature 2" className="side-image"/>
                 </div>
+                
                 <section className="maxs">
-                <div className='max'>
-                    <div className="hero-images3">
-                        <img src="/images/I.jpg" alt="Nature 1" className="main-image"/>
+                    <div className="hero-content1">
+                        <h1>Explore Global Inspirations</h1>
+                        <p>Discover stunning designs from around the world. Let us bring unique, creative ideas to your space.</p>
+                        <button className="bbutton">Get Started</button>
                     </div>
-                    <div className="hero-images4">
-                        <img src="/images/J.jpg" alt="Nature 2" className="side-image"/>
+                    <div className='max'>
+                        <div className="hero-images3">
+                            <img src="/images/I.jpg" alt="Nature 1" className="main-image"/>
+                        </div>
+                        <div className="hero-images4">
+                            <img src="/images/J.jpg" alt="Nature 2" className="side-image"/>
+                        </div>
                     </div>
-                </div>
                 </section>
             </section>
             
