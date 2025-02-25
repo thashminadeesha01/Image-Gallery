@@ -8,13 +8,14 @@ body {
     align-items: center;
     min-width: 510px;
     margin: auto;
+    margin-top: 50px;
 }
 
 .topic {
     max-width: 722px;
     width: 90%;
     height: auto;
-    margin: 15px auto;
+    margin: 25px auto;
     text-align: center;
 }
 
@@ -61,11 +62,11 @@ body {
     border: hidden;
 }
 
-/* Image Grid - 4 images in one row for desktop */
+
 .imageStyle {
     display: flex;
-    justify-content: center; /* Spaces out images */
-    flex-wrap: wrap; /* Allows wrapping if needed */
+    justify-content: center; 
+    flex-wrap: wrap; 
     gap: 16px;
     padding: 20px;
     max-width: 1300px;
@@ -73,11 +74,11 @@ body {
 }
 
 .imageStyle img {
-    width: calc(25% - 12px); /* 4 images per row */
-    height: 250px; /* Adjust height */
+    width: calc(25% - 12px);
+    height: 250px; 
     border-radius: 15px;
     transition: 0.3s ease-in-out;
-    object-fit: cover; /* Ensures images scale properly */
+    object-fit: cover; 
     justify-content: center;
 }
 
@@ -95,6 +96,15 @@ body {
         width: calc(33.33% - 12px); 
         height: 250px;
     }
+
+    .topic h1 {
+        font-size: 48px;
+        line-height: 50px; 
+    }
+
+    .topic {
+        margin-top: 60px;
+    }
 }
 
 
@@ -110,7 +120,7 @@ body {
 
     .topic {
         height: auto;
-        margin: 35px auto;
+        margin: 60px auto;
         text-align: center;
     }
 }
@@ -129,10 +139,14 @@ body {
         width: calc(50% - 12px); 
         height: 200px;
     }
+    
+    .topic{
+        margin-top: 60px;
+    }
 
-    .topic {
-        font-size: 44px;
-        font-style: bold;
+    .topic h1 {
+        font-size: 38px;
+        line-height: 39px; 
     }
 
     p {
@@ -149,7 +163,7 @@ body {
 
 @media (max-width: 662px) {
     .topic {
-        margin-top: 50px;
+        margin-top: 60px;
     }
     .topic h1 {
         font-size: 35px; 
